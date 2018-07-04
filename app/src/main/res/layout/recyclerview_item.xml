@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/course_thumbnail"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:scaleType="centerInside"
+        tools:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/course_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/padding_margin"
+        android:paddingEnd="@dimen/padding_margin"
+        android:textColor="@color/colorPrimaryDark"
+        style="@style/TextAppearance.AppCompat.Small"
+        />
+
+    <RelativeLayout
+        android:id="@+id/course_list_text_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/course_thumbnail"
+        android:layout_toStartOf="@id/course_lable">
+
+        <TextView
+            android:id="@+id/course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_margin"
+            android:layout_marginRight="@dimen/padding_margin"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorBlack"
+             />
+
+        <TextView
+            android:id="@+id/course_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/course_title"
+            android:layout_marginLeft="@dimen/padding_margin"
+            android:layout_marginRight="@dimen/padding_margin"
+            android:ellipsize="end"
+            android:maxLines="3"
+            style="@style/TextAppearance.AppCompat.Small"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
