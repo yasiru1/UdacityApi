@@ -70,11 +70,9 @@ public class MainPresenter extends Presenter<MainPresenter.View> {
         //set number of column
         void setColumnCount(int columnCount);
 
-
         void displayError(String errorMsg);
 
         void renderGrid(ArrayList<Course> courseList);
-
 
     }
 }
